@@ -11,7 +11,7 @@ To detect malicious scanning activity, we start by checking for web requests tha
 cat access.log | grep "404"
 ```
 
-![Identifying Attacker IP](images/attacker%20ip%20address.png)
+![Identifying Attacker IP](images/attacker-ip-address.png)
 
 > **Analysis & Commentary:** When analyzing the output of this command, I looked for IP addresses generating an anomalous volume of 404 errors within a brief timeframe. This pattern is a definitive indicator of automated directory brute-forcing (fuzzing) tools, such as Gobuster or Dirbuster, attempting to map out hidden resources.
 
